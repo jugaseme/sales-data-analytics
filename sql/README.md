@@ -27,9 +27,9 @@ Construir progresivamente un proyecto de análisis de ventas utilizando:
 - [x] COUNT()
 - [x] AS
 - [x] GROUP BY
-- [ ] SUM()
-- [ ] AVG()
-- [ ] JOIN
+- [x] SUM()
+- [x] AVG()
+- [x] JOIN
 - [ ] Subconsultas
 - [ ] CTE
 - [ ] Window Functions
