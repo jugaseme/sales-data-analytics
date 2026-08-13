@@ -17,6 +17,7 @@ Construir progresivamente un proyecto de análisis de ventas utilizando:
 ### SQL
 - [x] Crear base de datos
 - [x] Crear tabla de clientes
+- [x] Crear tabla de productos
 - [x] Insertar datos
 - [x] SELECT
 - [x] WHERE
@@ -24,7 +25,8 @@ Construir progresivamente un proyecto de análisis de ventas utilizando:
 - [x] ASC / DESC
 - [x] LIMIT
 - [x] COUNT()
-- [ ] GROUP BY
+- [x] AS
+- [x] GROUP BY
 - [ ] SUM()
 - [ ] AVG()
 - [ ] JOIN
