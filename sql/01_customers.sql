@@ -68,3 +68,19 @@ LIMIT 3;
 SELECT COUNT(*)
 FROM customers
 WHERE city = 'Soacha';
+
+-- =====================================================
+-- 4. ANÁLISIS CON GROUP BY
+-- =====================================================
+
+-- Cantidad de clientes por ciudad
+SELECT city, COUNT(*) AS total_clientes
+FROM customers
+GROUP BY city;
+
+
+-- Ciudades ordenadas de mayor a menor cantidad de clientes
+SELECT city, COUNT(*) AS total_clientes
+FROM customers
+GROUP BY city
+ORDER BY total_clientes DESC;
