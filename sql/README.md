@@ -55,4 +55,8 @@ Construir progresivamente un proyecto de análisis de ventas utilizando:
 
 ## Estado actual
 
-Actualmente estamos trabajando en la construcción de la base de datos y aprendiendo los fundamentos de SQL con PostgreSQL.
+Actualmente estamos trabajando en el análisis de datos de ventas utilizando PostgreSQL y SQL.
+
+Ya se han construido las tablas principales de clientes, productos y órdenes, y se han realizado consultas utilizando JOIN, GROUP BY, SUM, HAVING, ORDER BY y LIMIT.
+
+El siguiente objetivo es aprender subconsultas y continuar avanzando hacia CTEs y Window Functions.
