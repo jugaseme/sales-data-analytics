@@ -24,24 +24,10 @@ WHERE price > (
 -- =========================================
 
 SELECT
-    customers.first_name AS cliente,
-    SUM(orders.quantity * products.price) AS gasto
-FROM orders
-JOIN products
-    ON orders.product_id = products.product_id
-JOIN customers
-    ON orders.customer_id = customers.customer_id
-GROUP BY customers.first_name
-HAVING SUM(orders.quantity * products.price) = (
-    SELECT MAX(total_gasto)
-    FROM (
-        SELECT
-            SUM(orders.quantity * products.price) AS total_gasto
-        FROM orders
-        JOIN products
-            ON orders.product_id = products.product_id
-        JOIN customers
-            ON orders.customer_id = customers.customer_id
-        GROUP BY customers.first_name
-    ) AS gastos_clientes
+    product_name,
+    price
+FROM products
+WHERE price = (
+    SELECT MAX(price)
+    FROM products
 );
